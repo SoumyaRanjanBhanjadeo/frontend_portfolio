@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.header h1 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a192f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #013f3c7f;
+    border-radius: 10px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.icon:hover {
+    color: #fff;
+}
+
+.s {
+    animation: k 1s infinite;
+}
+
+@keyframes k {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.r {
+    animation: r 1s infinite;
+}
+
+@keyframes r {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.b {
+    animation: b 1s infinite;
+}
+
+@keyframes b {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+input,
+textarea {
+    height: 40px;
+    border: 1px solid gray;
+    width: 100%;
+    padding-left: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(51, 51, 51);
+}
+
+textarea {
+    height: 100px;
+    padding-top: 10px;
+}
+
+.skill_name h1{
+    margin-bottom: 0;
+}
+
+.clip {
+    clip-path: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
+}
